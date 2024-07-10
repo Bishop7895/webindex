@@ -1,0 +1,128 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Be Vietnam Pro";
+}
+
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.main-header {
+  padding: 2rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  gap: 1rem;
+}
+
+.logo-text {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+.header-nav menu {
+  list-style-type: none;
+  padding-left: 0;
+  margin-block: 0;
+
+  display: flex;
+  gap: 2rem;
+}
+
+.header-nav a {
+  color: black;
+  text-decoration-color: lightgray;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+
+  transition: text-underline-offset 200ms, text-decoration-color 200ms;
+}
+
+.header-nav a:hover {
+  text-underline-offset: 2px;
+  text-decoration-color: grey;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.description {
+  margin-top: 14%;
+  text-align: center;
+  padding: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.left,
+.right {
+  width: 50%;
+}
+
+.article-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+
+  vertical-align: bottom;
+  justify-content: flex-end;
+}
+
+.main-footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+
+  padding: 2rem;
+}
+
+.logo-footer {
+  margin-block: 2rem;
+}
+
+.logo-footer h2 {
+  font-family: "Be Vietnam Pro";
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.footer-nav-list {
+  list-style-type: none;
+  font-size: 75%;
+  width: 98%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer-nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 200;
+}
+.description button {
+  background-color: black;
+  color: white;
+  font-family: inherit;
+  cursor: pointer;
+  border: 1px solid black;
+  padding: 0.5rem 1.5rem;
+  transition: background-color 200ms, color 200ms;
+}
